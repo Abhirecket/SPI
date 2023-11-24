@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="spi_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="spi_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="276.065 ns"></ZoomEndTime>
+      <Cursor1Time time="225.871 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group191" type="group">
+      <obj_property name="label">spi_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/spi_tb/s1/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/new_data" type="logic">
+         <obj_property name="ElementShortName">new_data</obj_property>
+         <obj_property name="ObjectShortName">new_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/rst_s" type="logic">
+         <obj_property name="ElementShortName">rst_s</obj_property>
+         <obj_property name="ObjectShortName">rst_s</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/d_in" type="array">
+         <obj_property name="ElementShortName">d_in[11:0]</obj_property>
+         <obj_property name="ObjectShortName">d_in[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/d_out" type="array">
+         <obj_property name="ElementShortName">d_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">d_out[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/cs" type="logic">
+         <obj_property name="ElementShortName">cs</obj_property>
+         <obj_property name="ObjectShortName">cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/mosi" type="logic">
+         <obj_property name="ElementShortName">mosi</obj_property>
+         <obj_property name="ObjectShortName">mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/sclk" type="logic">
+         <obj_property name="ElementShortName">sclk</obj_property>
+         <obj_property name="ObjectShortName">sclk</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group206" type="group">
+      <obj_property name="label">master_m1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/spi_tb/s1/m1/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/new_data" type="logic">
+         <obj_property name="ElementShortName">new_data</obj_property>
+         <obj_property name="ObjectShortName">new_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/rst_s" type="logic">
+         <obj_property name="ElementShortName">rst_s</obj_property>
+         <obj_property name="ObjectShortName">rst_s</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/d_in" type="array">
+         <obj_property name="ElementShortName">d_in[11:0]</obj_property>
+         <obj_property name="ObjectShortName">d_in[11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/count_clk" type="array">
+         <obj_property name="ElementShortName">count_clk[3:0]</obj_property>
+         <obj_property name="ObjectShortName">count_clk[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/sclk" type="logic">
+         <obj_property name="ElementShortName">sclk</obj_property>
+         <obj_property name="ObjectShortName">sclk</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/mosi" type="logic">
+         <obj_property name="ElementShortName">mosi</obj_property>
+         <obj_property name="ObjectShortName">mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/cs" type="logic">
+         <obj_property name="ElementShortName">cs</obj_property>
+         <obj_property name="ObjectShortName">cs</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/temp" type="array">
+         <obj_property name="ElementShortName">temp[11:0]</obj_property>
+         <obj_property name="ObjectShortName">temp[11:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/count_bit" type="array">
+         <obj_property name="ElementShortName">count_bit[3:0]</obj_property>
+         <obj_property name="ObjectShortName">count_bit[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/present_state" type="array">
+         <obj_property name="ElementShortName">present_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">present_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/m1/ENABLE" type="array">
+         <obj_property name="ElementShortName">ENABLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ENABLE[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group218" type="group">
+      <obj_property name="label">slave_s1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/spi_tb/s1/s1/cs" type="logic">
+         <obj_property name="ElementShortName">cs</obj_property>
+         <obj_property name="ObjectShortName">cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/mosi" type="logic">
+         <obj_property name="ElementShortName">mosi</obj_property>
+         <obj_property name="ObjectShortName">mosi</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/sclk" type="logic">
+         <obj_property name="ElementShortName">sclk</obj_property>
+         <obj_property name="ObjectShortName">sclk</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/d_out" type="array">
+         <obj_property name="ElementShortName">d_out[11:0]</obj_property>
+         <obj_property name="ObjectShortName">d_out[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/present_state" type="array">
+         <obj_property name="ElementShortName">present_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">present_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/count_bit" type="array">
+         <obj_property name="ElementShortName">count_bit[3:0]</obj_property>
+         <obj_property name="ObjectShortName">count_bit[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/temp" type="array">
+         <obj_property name="ElementShortName">temp[11:0]</obj_property>
+         <obj_property name="ObjectShortName">temp[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/DETECT_START" type="array">
+         <obj_property name="ElementShortName">DETECT_START[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DETECT_START[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_tb/s1/s1/READ_DATA" type="array">
+         <obj_property name="ElementShortName">READ_DATA[1:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_DATA[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

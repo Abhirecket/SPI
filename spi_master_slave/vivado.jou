@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Nov 24 11:57:54 2023
+# Process ID: 13836
+# Current directory: C:/Users/abhis/OneDrive/Desktop/spi_new/spi_master_slave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21968 C:\Users\abhis\OneDrive\Desktop\spi_new\spi_master_slave\spi_master_slave.xpr
+# Log file: C:/Users/abhis/OneDrive/Desktop/spi_new/spi_master_slave/vivado.log
+# Journal file: C:/Users/abhis/OneDrive/Desktop/spi_new/spi_master_slave\vivado.jou
+# Running On: LAPTOP-KB4NR7PR, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 21243 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/abhis/OneDrive/Desktop/spi_new/spi_master_slave/spi_master_slave.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/abhis/OneDrive/Desktop/spi_new/spi_master_slave/spi_tb_behav.wcfg
+source spi_tb.tcl
+close_sim

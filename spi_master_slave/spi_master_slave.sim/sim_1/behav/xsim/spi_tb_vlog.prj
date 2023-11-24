@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../spi_master_slave.srcs/sources_1/new/spi_master.v" \
+"../../../../spi_master_slave.srcs/sources_1/new/spi_slave.v" \
+"../../../../spi_master_slave.srcs/sources_1/new/spi_top.v" \
+"../../../../spi_master_slave.srcs/sim_1/new/spi_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
