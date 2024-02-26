@@ -54,9 +54,7 @@ end
 always @(posedge sclk) begin
     if (rst_s) begin//changed this for now
         present_state <= IDLE;
-        cs <= 1'b1;  
-        mosi <= 1'b0;
-        count_bit <= 4'd0;   
+  
     end
     else begin
         present_state <= next_state;
@@ -66,31 +64,33 @@ end
 //Main FSM for the Transmission of the data
 
 always @(posedge sclk) begin
-    
+            cs = 1'b1;  
+        mosi = 1'b0;
+        count_bit = 4'd0; 
     case (present_state)
         IDLE: begin
             if (new_data == 1'b1)begin
-                temp <= d_in;
-                cs<= 1'b0;
-                next_state<= ENABLE;
+                temp = d_in;
+                cs= 1'b0;
+                next_state= ENABLE;
             end
             else begin
-                temp<= 'd0;
-                next_state<= IDLE;
+                temp = 'd0;
+                next_state = IDLE;
             end
         end
         ENABLE: begin
             if (count_bit < 4'd12) begin
-                mosi <= temp[count_bit];
-                count_bit <= count_bit + 1'b1;
+                mosi = temp[count_bit];
+                count_bit = count_bit + 1'b1;
                 //next_state= ENABLE;
             end
            
             else begin
-                count_bit <= 'b0;
-                mosi <= 1'b0;
-                next_state <= IDLE;
-                cs <= 1'b1;
+                count_bit = 'b0;
+                mosi = 1'b0;
+                next_state = IDLE;
+                cs = 1'b1;
             end
         end
 //        TX: begin
