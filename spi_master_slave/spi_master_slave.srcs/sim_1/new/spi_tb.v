@@ -11,7 +11,6 @@ module spi_tb();
     reg start_tx = 0;
     reg [11:0] data = 12'b110010101010;
     
-    wire cs, mosi, miso, sclk, done;
     
     spi_top s1 (
         .clk(clk), 
@@ -22,17 +21,7 @@ module spi_tb();
         .done(done), 
         .d_out(d_out)
     );
-//    spi_wrapper wrapper (
-//        .clk(clk),
-//        .rst(rst),
-//        .ss(ss),
-//        .mosi(mosi),
-//        .miso(miso),
-//        .sck(sck),
-//        .start_tx(start_tx),
-//        .data(data)
-      
-//    );
+
 
     always #(CLK_PERIOD/2) clk = ~clk;
     
@@ -63,10 +52,6 @@ module spi_tb();
         $finish;
     end
 
-    // Monitor
-    always @(posedge clk) begin
-        // Display received data
-        $display("Received Data: %h", miso);
-    end
+
 
 endmodule
