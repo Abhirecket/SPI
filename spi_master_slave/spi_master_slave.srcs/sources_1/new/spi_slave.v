@@ -20,8 +20,7 @@ parameter READ_DATA = 2'b01;
 always @ (posedge sclk)begin
     if (cs == 1'b1)begin
         present_state <= DETECT_START;
-        count_bit <= 'd0;
-        temp <= 0;//added for initial condition cs as rst
+
     end
     else begin 
         present_state <= next_state;
@@ -29,27 +28,28 @@ always @ (posedge sclk)begin
 end
 
 always @ (posedge sclk) begin
-
- 
+        count_bit = 'd0;
+        temp = 0;//added for initial condition cs as rst
+         done = 1'b0;
     case (present_state)
         DETECT_START: begin
         done<= 1'b0;
             if (cs == 1'b0) begin
-                next_state <= READ_DATA;
+                next_state = READ_DATA;
             end
             else begin
-                next_state <= DETECT_START;
+                next_state = DETECT_START;
             end     
         end
         READ_DATA: begin
             if (count_bit <= 11)begin
-                count_bit <= count_bit + 1'b1;
-                temp <= {mosi, temp[11:1]};
+                count_bit = count_bit + 1'b1;
+                temp = {mosi, temp[11:1]};
             end
             else begin
-                count_bit <= 'd0;
-                done <= 1'b1;
-                next_state <= DETECT_START;
+                count_bit = 'd0;
+                done = 1'b1;
+                next_state = DETECT_START;
             end
         end
     endcase
