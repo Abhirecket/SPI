@@ -63,7 +63,7 @@ always @(posedge sclk) begin
 end
 //Main FSM for the Transmission of the data
 
-always @(posedge sclk) begin
+always @(*) begin
             cs = 1'b1;  
         mosi = 1'b0;
         count_bit = 4'd0; 
