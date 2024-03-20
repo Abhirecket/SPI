@@ -27,7 +27,7 @@ always @ (posedge sclk)begin
     end
 end
 
-always @ (posedge sclk) begin
+always @ (*) begin
         count_bit = 'd0;
         temp = 0;//added for initial condition cs as rst
          done = 1'b0;
